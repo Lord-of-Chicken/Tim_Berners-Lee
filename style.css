@@ -2,8 +2,13 @@
 /* CSS Document */
 
 body {
-    background-color: rgb(133, 133, 133);
+    background-color: rgba(205, 205, 205, 0.973);
     font-family: 'Open Sans', sans-serif;
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-row-gap: 20px;
+    
 }
 article {
     margin-left: auto;
@@ -12,44 +17,21 @@ article {
     display: grid;
     width: 475px;
     background-color: white;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
-    grid-auto-flow: column;
-    box-shadow: 5px 2px 20px rgb(160, 160, 160);
+    box-shadow: 1px 1px 3px rgb(180, 180, 180);
     border-radius: 2px;
-    grid-row-gap: 100px;
+    padding: 20px;
     
 }
+ul {
+    list-style:none;
+}
 .movies {
-    vertical-align: middle;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
-    grid-auto-flow: column;
-    grid-auto-flow: row;
-
+ display: grid;
+ grid-template-columns: 20% 80%;   
+ vertical-align: middle !important;   
 
 }
-
-.a1 {
-grid-column-start: 1;
-grid-column-end: 2;}
-.a2 {
-    grid-column-start: 3;
-    }
-
-.a4 {
-grid-column-start: 4;
-}    
-.a5 {
-    grid-column-start: 5;
-    }
-.a6 {
-        grid-column-start: 6;
-        }    
-.a7 {
-            grid-column-start: 7;
-            }    
+ 
 
 .pic_film {
     width: 75px;
@@ -59,3 +41,37 @@ h1 {
     font-size: 18px;
     color: rgb(169, 22, 22);
 }
+.pic_tim {
+    width: 100px;
+   border-radius:50%; 
+   border: 1px solid;
+   border-color: gray;
+}
+
+.butsee {
+        background: #0066A2; 
+        border-radius: 5px;       
+        height: 50px;        
+        width: 160px;        
+        font-weight: 800;    
+        }
+        
+
+a, a:hover, a:visited, a:active
+        {
+            color: white;
+            text-decoration:none;
+        }
+
+h3 {
+font-size: 20px;
+color: rgb(171, 171, 171);
+font-weight: 600;
+        }
+        
+h2 {
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+    font-weight: 600;
+    padding: 16px;
+        }
